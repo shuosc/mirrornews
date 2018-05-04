@@ -1,0 +1,32 @@
+menu:
+    主站: https://osc.shu.edu.cn
+    镜像站: /
+    官方博客: https://osc.shu.edu.cn/blog/
+    社区维基: https://osc.shu.edu.cn/wiki/
+    所有通知: /news/archives/
+
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+
+# count
+show_count: true
+favicon: /images/favicon.ico
+logo: /images/logo.png
+
+# Comment
+changyan: shuosc
+yungentie: 
+disqus:
+duoshuo: 
+
+
+# Analytics
+# google-analytics:
+ga: UA-113238974-3
+
+# Copyright Infomation
+startyear: 2016
+
