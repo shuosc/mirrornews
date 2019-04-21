@@ -1,9 +1,9 @@
 menu:
     主站: https://osc.shu.edu.cn
-    镜像站: /
-    官方博客: https://osc.shu.edu.cn/blog/
+    镜像站: https://mirrors.shu.edu.cn
+    官方博客: https://blog.shuosc.org
     社区维基: https://osc.shu.edu.cn/wiki/
-    所有通知: /news/archives/
+    所有通知: /archives/
 
 widgets:
 - category

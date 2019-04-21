@@ -12,8 +12,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mirrors.shu.edu.cn/news
-root: /news/
+url: https://mirrornews.shuosc.org
+root: /
 permalink: p/:abbrlink.html
 permalink_defaults: 
 abbrlink:
@@ -81,7 +81,9 @@ theme: bubuzou
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:shuosc/mirrornews.git
+  branch: gh-pages
 
 #Seach
 search:
