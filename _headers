@@ -1,2 +1,2 @@
 /*
-  access-control-allow-origin: mirrors.shu.edu.cn
+  access-control-allow-origin: http://mirrors.shu.edu.cn, https://mirrors.shu.edu.cn
