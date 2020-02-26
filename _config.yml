@@ -87,7 +87,7 @@ deploy:
 
 #Seach
 search:
-  path: /search.xml
+  path: /p/search.xml
   field: post
 
 #Recent
