@@ -1,0 +1,24 @@
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/hexo
+image: shuosc/node:hexo
+
+pages:
+  before_script:
+    - mkdir -p ~/.ssh
+    - cat $SSH_PRIVATE_KEY_DEV >> ~/.ssh/id_rsa
+    - cat $KNOWN_HOSTS >> ~/.ssh/known_hosts
+    - chmod -R 700 ~/.ssh
+    - test -e package.json && npm install
+  script:
+    - hexo generate
+    - ssh $DEPLOY_USER@$DEPLOY_SERVER_DEV -p $DEPLOY_PORT "rm -rf $WEB_DIR/*"
+    - scp -P $DEPLOY_PORT -r public/* $DEPLOY_USER@$DEPLOY_SERVER_DEV:$WEB_DIR 
+  artifacts:
+    paths:
+      - public
+  cache:
+    paths:
+      - node_modules
+    key: project
+  only:
+    - master
