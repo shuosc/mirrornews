@@ -2,4 +2,5 @@
 
 这是上海大学开源镜像站的镜像新闻。
 
-RSS地址：https://mirrornews.shuosc.org/atom.xml
+公网RSS地址：https://mirrornews.shuosc.org/atom.xml
+校园内网RSS地址：https://mirrors.shuosc.cn/news/atom.xml
